@@ -6,7 +6,7 @@ Consider a game with 8 players, each of whom can choose to either **take** 10 go
 
 The game does not reduce to a scalar in 8-dimensional space through iterated removal of dominated strategies, and there is no pure Nash Equilibrium. Consequently, players adopt mixed strategies to equate the expected payoffs of their choices, forming a Nash Equilibrium. 
 
-Since the game is evidently symmetric, it admits a symmetric Nash Equilibrium. Suppose each player chooses to split with probability $\( p \)$ and to take with probability $\( 1-p \)$. The expected payoff for choosing to take is straightforward:
+Since the game is evidently symmetric, it admits a symmetric Nash Equilibrium. Suppose each player chooses to split with probability $p$ and to take with probability $\( 1-p \)$. The expected payoff for choosing to take is straightforward:
 
 $$\Pi(T) = 10$$
 
