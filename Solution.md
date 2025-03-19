@@ -1,3 +1,4 @@
+# An Analysis of The Split-30 Dilemma in Teamfight Tactics
 Consider a game with 8 players, each of whom can choose to either **take** 10 gold or **split** 30 gold with the other players who also choose to split. Let \( n \) denote the number of players who choose to split. The payoffs for each strategy are as follows:
 
 - **Split**: $\ \frac{30}{n}  (if \( n \geq 1 \))\$
