@@ -1,5 +1,5 @@
 # An Analysis of The Split-30 Dilemma in Teamfight Tactics
-Consider a game with 8 players where each player tries to maximise their gold (not the case in an actual game of Teamfight Tactics; the utility of gold is not linear and there is additional utility in minimizing other players' gold), each of whom can choose to either **take** 10 gold or **split** 30 gold with the other players who also choose to split. Let $n$ denote the number of players who choose to split. The payoffs for each strategy are as follows:
+Consider a game with 8 players where each player tries to maximise their gold (not the case in an actual game of Teamfight Tactics; the utility of gold is not linear and there is additional utility in minimising other players' gold), each of whom can choose to either **take** 10 gold or **split** 30 gold with the other players who also choose to split. Let $n$ denote the number of players who choose to split. The payoffs for each strategy are as follows:
 
 - **Split**: $\ \frac{30}{n}   (if \( n \geq 1 \))\$
 - **Take**: $10$
