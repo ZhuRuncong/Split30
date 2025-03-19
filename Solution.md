@@ -12,13 +12,18 @@ $$\Pi(T) = 10$$
 
 The expected payoff for choosing to split, however, depends on the number of other players who also choose to split. This can be expressed as:
 
-$$\Pi(S) = \sum_{i=0}^{7} \binom{7}{i} p^i (1-p)^{7-i} \left( \frac{30}{i+1} \right)$$
+$$ \Pi(S) = \sum_{i=0}^{7} \binom{7}{i} p^i (1-p)^{7-i} \left( \frac{30}{i+1} \right) $$
+
+For clarity:
+- $\binom{7}{i}$ is the number of ways $i$ players out of the 7 others can choose to split
+- $(p^i)(1-p)^{7-i}$ is the probability that a specific set of $i$ players split
+- $\frac{30}{i+1}$ is the payoff when the player splits and $i$ other players split
 
 To find the symmetric Nash Equilibrium, we equate the expected payoffs of the two strategies:
 
 $$\sum_{i=0}^{7} \binom{7}{i} p^i (1-p)^{7-i} \left( \frac{30}{i+1} \right) = 10$$
 
-Solving this equation numerically yields:
+[Solving](numericalsolution.py) this equation yields:
 
 $$p \approx 0.365$$
 
