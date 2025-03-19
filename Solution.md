@@ -27,11 +27,11 @@ $$\sum_{i=0}^{7} \binom{7}{i} p^i (1-p)^{7-i} \left( \frac{30}{i+1} \right) = 10
 
 $$p \approx 0.365$$
 
-This means that, on average, about 36.5% of the players will choose to split, while the remaining 63.5% will choose to take. 
+This means if fewer people start splitting and $p<0.365$; then the expected payoff for splitting will increase and exceed that of taking, making more people start splitting. If more people start splitting and $p>0.365$; then the expected payoff for splitting will drop and the payoff for taking will exceed that of splitting, making more people start taking.
 
 ## Veryifying Evolutionary Stability
 
-In layman’s terms, evolutionary stability is a strategy's ability to resist being replaced by alternative strategies in a population. This strategy is evolutionarily stable. If fewer people start splitting and $p<0.365$; then the expected payoff for splitting will increase and exceed that of taking, making more people start splitting. If more people start splitting and $p>0.365$; then the expected payoff for splitting will drop and the payoff for taking will exceed that of splitting, making more people start taking.
+In layman’s terms, evolutionary stability is a strategy's ability to resist being replaced by alternative strategies in a population. This strategy is evolutionarily stable. 
 
 Let us verify whether this mixed strategy $d$ satisfies the two formal mathematical conditions of an evolutionarily stable strategy:
 
@@ -70,4 +70,4 @@ It is better than splitting every time
 
 $$7.72 > 2.67$$
 
-Thus, the solution to the split-30 dilemma is evolutionarily stable. 
+Thus, the solution to the split-30 dilemma is evolutionarily stable and no alternative strategy will replace it in the long run.
