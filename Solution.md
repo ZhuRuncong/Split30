@@ -1,6 +1,6 @@
 Consider a game with 8 players, each of whom can choose to either **take** 10 gold or **split** 30 gold with the other players who also choose to split. Let \( n \) denote the number of players who choose to split. The payoffs for each strategy are as follows:
 
-- **Split**: $ \frac{30}{n}  (if \( n \geq 1 \))$
+- **Split**: $\ \frac{30}{n}  (if \( n \geq 1 \))\$
 - **Take**: $10$
 
 The game does not reduce to a scalar in 8-dimensional space through iterated removal of dominated strategies, and there is no pure Nash Equilibrium. Consequently, players adopt mixed strategies to equate the expected payoffs of their choices, forming a Nash Equilibrium. 
