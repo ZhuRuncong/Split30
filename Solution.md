@@ -4,7 +4,7 @@ Consider a game with 8 players where each player tries to maximise their gold (n
 - **Split**: $\ \frac{30}{n}   (if \( n \geq 1 \))\$
 - **Take**: $10$
 
-The game does not reduce to a scalar in 8-dimensional space through iterated removal of dominated strategies as there are no strictly dominated strategies (the proof is trivial), thus there is no pure Nash Equilibrium. Consequently, players adopt mixed strategies to equate the expected payoffs of their choices, forming a Nash Equilibrium. 
+The game does not reduce to a scalar in 8-dimensional space through iterated removal of dominated strategies as there are no strictly dominated strategies (this is intuitive), thus there is no pure Nash Equilibrium. Consequently, players adopt mixed strategies to equate the expected payoffs of their choices, forming a Nash Equilibrium. 
 
 Since the game is evidently symmetric, it admits a symmetric Nash Equilibrium. The symmetry allows us to assume that all players use the same mixed strategy. Suppose each player chooses to split with probability $p$ and to take with probability $\( 1-p \)$. The expected payoff for choosing to take is straightforward:
 
