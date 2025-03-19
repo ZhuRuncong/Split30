@@ -7,24 +7,16 @@ The game does not reduce to a scalar in 8-dimensional space through iterated rem
 
 Since the game is symmetric, it admits a symmetric Nash Equilibrium. Suppose each player chooses to split with probability \( p \) and to take with probability \( 1-p \). The expected payoff for choosing to take is straightforward:
 
-\[
 $\Pi(T) = 10$
-\]
 
 The expected payoff for choosing to split, however, depends on the number of other players who also choose to split. This can be expressed as:
 
-\[
 $\Pi(S) = \sum_{i=0}^{7} \binom{7}{i} p^i (1-p)^{7-i} \left( \frac{30}{i+1} \right)$
-\]
 
 To find the symmetric Nash Equilibrium, we equate the expected payoffs of the two strategies:
 
-\[
 $\sum_{i=0}^{7} \binom{7}{i} p^i (1-p)^{7-i} \left( \frac{30}{i+1} \right) = 10$
-\]
 
 Solving this equation numerically yields:
 
-\[
 $p \approx 0.365$
-\]
