@@ -1,12 +1,12 @@
 # An Analysis of The Split-30 Dilemma in Teamfight Tactics
-Consider a game with 8 players where each player tries to maximize their gold (not the case in an actual game of Teamfight Tactics; the utility of gold is not linear and there is additional utility in minimizing other players' gold), each of whom can choose to either **take** 10 gold or **split** 30 gold with the other players who also choose to split. Let $n$ denote the number of players who choose to split. The payoffs for each strategy are as follows:
+Consider a game with 8 players where each player tries to maximise their gold (not the case in an actual game of Teamfight Tactics; the utility of gold is not linear and there is additional utility in minimizing other players' gold), each of whom can choose to either **take** 10 gold or **split** 30 gold with the other players who also choose to split. Let $n$ denote the number of players who choose to split. The payoffs for each strategy are as follows:
 
 - **Split**: $\ \frac{30}{n}   (if \( n \geq 1 \))\$
 - **Take**: $10$
 
 The game does not reduce to a scalar in 8-dimensional space through iterated removal of dominated strategies, thus there is no pure Nash Equilibrium. Consequently, players adopt mixed strategies to equate the expected payoffs of their choices, forming a Nash Equilibrium. 
 
-Since the game is evidently symmetric, it admits a symmetric Nash Equilibrium. Suppose each player chooses to split with probability $p$ and to take with probability $\( 1-p \)$. The expected payoff for choosing to take is straightforward:
+Since the game is evidently symmetric, it admits a symmetric Nash Equilibrium. The symmetry allows us to assume that all players use the same mixed strategy. Suppose each player chooses to split with probability $p$ and to take with probability $\( 1-p \)$. The expected payoff for choosing to take is straightforward:
 
 $$\Pi(T) = 10$$
 
@@ -19,7 +19,7 @@ For clarity:
 - $(p^i)(1-p)^{7-i}$ is the probability that a specific set of $i$ players split
 - $\frac{30}{i+1}$ is the payoff when the player splits and $i$ other players split
 
-To find the symmetric Nash Equilibrium, we equate the expected payoffs of the two strategies:
+To find the symmetric Nash Equilibrium, we equate the expected payoffs of the two strategies, ensuring that each player is indifferent between splitting and taking. This indifference condition arises because, in a mixed strategy equilibrium, players must randomise in such a way that no strategy offers a strictly better outcome, thereby stabilizing the equilibrium.
 
 $$\sum_{i=0}^{7} \binom{7}{i} p^i (1-p)^{7-i} \left( \frac{30}{i+1} \right) = 10$$
 
@@ -29,7 +29,7 @@ $$p \approx 0.365$$
 
 This means that, on average, about 36.5% of the players will choose to split, while the remaining 63.5% will choose to take. 
 
-## Evolutionary Stability
+## Veryifying Evolutionary Stability
 
 In layman’s terms, evolutionary stability is a strategy's ability to resist being replaced by alternative strategies in a population. This strategy is evolutionarily stable. If fewer people start splitting and $p<0.365$; then the expected payoff for splitting will increase and exceed that of taking, making more people start splitting. If more people start splitting and $p>0.365$; then the expected payoff for splitting will drop and the payoff for taking will exceed that of splitting, making more people start taking.
 
