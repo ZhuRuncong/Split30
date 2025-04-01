@@ -48,7 +48,7 @@ Evaluating the two pure strategies of taking every time and splitting every time
 
 $d$ against taking every time:
 
-$$0.365 \times (30) + (1 - 0.365) \times 10 = 17.3$$
+$$10 \times 0.365 \times (30) + (1 - 0.365) = 17.3$$
 
 Taking every time against itself: 
 
