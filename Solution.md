@@ -19,7 +19,7 @@ For clarity:
 - $(p^i)(1-p)^{7-i}$ is the probability that a specific set of $i$ players split
 - $\frac{30}{i+1}$ is the payoff when the player splits and $i$ other players split
 
-To find the symmetric Nash Equilibrium, we equate the expected payoffs (i.e. $Pi(T) = \Pi(S)$) of the two strategies to find a mixed strategy, ensuring that each player is indifferent between splitting and taking. We seek stability as, in a mixed strategy equilibrium, players must randomise in such a way that no strategy offers a strictly better outcome, thereby stabilising the equilibrium.
+To find the symmetric Nash Equilibrium, we equate the expected payoffs (i.e. $\Pi(T)=\Pi(S)$ ) of the two strategies to find a mixed strategy, ensuring that each player is indifferent between splitting and taking. We seek stability as, in a mixed strategy equilibrium, players must randomise in such a way that no strategy offers a strictly better outcome, thereby stabilising the equilibrium.
 
 $$\sum_{i=0}^{7} \binom{7}{i} p^i (1-p)^{7-i} \left( \frac{30}{i+1} \right) = 10$$
 
