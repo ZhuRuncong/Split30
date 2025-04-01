@@ -6,7 +6,7 @@ Consider a game with 8 players where each player tries to maximise their gold (n
 
 The game does not reduce to a scalar in 8-dimensional space through iterated removal of dominated strategies as there are no strictly dominated strategies (this is intuitive), thus there is no pure Nash Equilibrium. Consequently, players adopt mixed strategies to equate the expected payoffs of their choices, forming a Nash Equilibrium. 
 
-Since the game is evidently symmetric, it admits a symmetric Nash Equilibrium. The symmetry allows us to assume that all players use the same mixed strategy. Suppose each player chooses to split with probability $p$ and to take with probability $\( 1-p \)$. The expected payoff for choosing to take is straightforward:
+Since the game is evidently symmetric, it admits a symmetric Nash Equilibrium. The symmetry allows us to assume that all players use the same mixed strategy in a Nash Equilibrium. Suppose each player chooses to split with probability $p$ and to take with probability $\( 1-p \)$. The expected payoff for choosing to take is straightforward:
 
 $$\Pi(T) = 10$$
 
@@ -19,7 +19,7 @@ For clarity:
 - $(p^i)(1-p)^{7-i}$ is the probability that a specific set of $i$ players split
 - $\frac{30}{i+1}$ is the payoff when the player splits and $i$ other players split
 
-To find the symmetric Nash Equilibrium, we equate the expected payoffs of the two strategies to find a mixed strategy, ensuring that each player is indifferent between splitting and taking. We seek stability as, in a mixed strategy equilibrium, players must randomise in such a way that no strategy offers a strictly better outcome, thereby stabilising the equilibrium.
+To find the symmetric Nash Equilibrium, we equate the expected payoffs (i.e. $Pi(T) = \Pi(S)$) of the two strategies to find a mixed strategy, ensuring that each player is indifferent between splitting and taking. We seek stability as, in a mixed strategy equilibrium, players must randomise in such a way that no strategy offers a strictly better outcome, thereby stabilising the equilibrium.
 
 $$\sum_{i=0}^{7} \binom{7}{i} p^i (1-p)^{7-i} \left( \frac{30}{i+1} \right) = 10$$
 
